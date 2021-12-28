@@ -6,7 +6,7 @@
     <x:Property Name="out_jObj" Type="OutArgument(njl:JObject)" />
     <x:Property Name="out_jObjEmpl" Type="OutArgument(njl:JObject)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1207,2020</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1204,1819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -97,7 +97,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="JSON vacancies" sap:VirtualizedContainerService.HintSize="611,1955" sap2010:WorkflowViewState.IdRef="Sequence_24">
+  <Sequence DisplayName="JSON vacancies" sap:VirtualizedContainerService.HintSize="611,1754" sap2010:WorkflowViewState.IdRef="Sequence_24">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sPrices" />
       <Variable x:TypeArguments="x:String" Default="first" Name="variable1" />
@@ -251,17 +251,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:CommentOut DisplayName="Comment запрос к АПИ работодателя. &quot;Industry&quot;-в запросе по поиску вакансий" sap:VirtualizedContainerService.HintSize="569,161" sap2010:WorkflowViewState.IdRef="CommentOut_8">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="208,83" sap2010:WorkflowViewState.IdRef="Sequence_37">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="569,51" sap2010:WorkflowViewState.IdRef="CommentOut_7">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="476,391" sap2010:WorkflowViewState.IdRef="Sequence_36">

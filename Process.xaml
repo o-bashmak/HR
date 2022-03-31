@@ -514,7 +514,7 @@
                                     <av:PointCollection x:Key="ConnectorLocation">140,506.5 140,544.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="5" DataTable="[adDT]" DisplayName="For Each Salary Matches" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="5" DataTable="[adDT]" DisplayName="For Each Salary Matches" sap:VirtualizedContainerService.HintSize="434,1877" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
@@ -568,7 +568,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:InvokeWorkflowFile>
-                                        <If Condition="[statusRequest=200]" DisplayName="If check request status" sap:VirtualizedContainerService.HintSize="358,1213" sap2010:WorkflowViewState.IdRef="If_6">
+                                        <If Condition="[statusRequest=200 AndAlso CurrentRow(&quot;Salary&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="If check request status" sap:VirtualizedContainerService.HintSize="856,1213" sap2010:WorkflowViewState.IdRef="If_6">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

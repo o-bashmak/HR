@@ -6,7 +6,7 @@
     <x:Property Name="out_jObj" Type="OutArgument(njl:JObject)" />
     <x:Property Name="out_jObjEmpl" Type="OutArgument(njl:JObject)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1204,1819</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1196,1405</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -94,10 +94,9 @@
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="JSON vacancies" sap:VirtualizedContainerService.HintSize="611,1754" sap2010:WorkflowViewState.IdRef="Sequence_24">
+  <Sequence DisplayName="JSON vacancies" sap:VirtualizedContainerService.HintSize="611,1340" sap2010:WorkflowViewState.IdRef="Sequence_24">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sPrices" />
       <Variable x:TypeArguments="x:String" Default="first" Name="variable1" />
@@ -109,7 +108,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="569,435" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="569,51" sap2010:WorkflowViewState.IdRef="CommentOut_6">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="376,277" sap2010:WorkflowViewState.IdRef="Sequence_32">
           <sap:WorkflowViewStateService.ViewState>
@@ -124,20 +123,12 @@
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap:VirtualizedContainerService.HintSize="569,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[inHTTPreq]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">https://api.hh.ru/vacancies/50334209</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request Vacancy" EnableSSLVerification="True" EndPoint="[inHTTPreq]" sap:VirtualizedContainerService.HintSize="569,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[sPrices]" StatusCode="[outStatusRequest]" TimeoutMS="6000">
+    <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request Vacancy" EnableSSLVerification="True" EndPoint="[inHTTPreq]" sap:VirtualizedContainerService.HintSize="569,57" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[sPrices]" StatusCode="[outStatusRequest]" TimeoutMS="6000">
       <ui:HttpClient.Attachments>
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.Attachments>
@@ -208,7 +199,7 @@
         </Assign>
       </If.Else>
     </If>
-    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" DisplayName="HTTP Request Emploers" EnableSSLVerification="True" EndPoint="[out_jObj(&quot;employer&quot;)(&quot;url&quot;).ToString]" sap:VirtualizedContainerService.HintSize="569,22" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[sEmloyer]" TimeoutMS="6000">
+    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" DisplayName="HTTP Request Emploers" EnableSSLVerification="True" EndPoint="[out_jObj(&quot;employer&quot;)(&quot;url&quot;).ToString]" sap:VirtualizedContainerService.HintSize="569,57" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[sEmloyer]" TimeoutMS="6000">
       <ui:HttpClient.Attachments>
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.Attachments>

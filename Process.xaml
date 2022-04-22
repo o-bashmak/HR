@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1314.4,4084</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1314.4,3943.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -106,7 +106,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1324.8,4019.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1324.8,3878.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[new System.Data.DataTable]" Name="ResultDT" />
       <Variable x:TypeArguments="sd:DataTable" Default="[new System.Data.DataTable]" Name="bufferDT" />
@@ -158,13 +158,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CopyFile>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Новая вкладка" sap:VirtualizedContainerService.HintSize="1283.2,3552.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="5597cd4a-e78b-465a-ac68-19d493e4523c" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Новая вкладка" sap:VirtualizedContainerService.HintSize="1283.2,3412" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="5597cd4a-e78b-465a-ac68-19d493e4523c" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="1249.6,3336" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="1249.6,3195.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -179,13 +179,13 @@
                 <InArgument x:TypeArguments="s:String[]">[in_Config("prof").ToString.Split(CChar(";"))]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1208,3140" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ProfList]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1208,2999.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ProfList]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1172.8,3013.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1172.8,2868" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="urlVac" />
                     </Sequence.Variables>
@@ -205,16 +205,16 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <If sap2010:Annotation.AnnotationText="Если в конфиге есть слова исключения, то добавляем в конечную поисковую строку" Condition="[in_Config(&quot;RemoveCompany&quot;).ToString=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="1131.2,253.6" sap2010:WorkflowViewState.IdRef="If_31">
+                    <If sap2010:Annotation.AnnotationText="Если в конфиге есть слова исключения, то добавляем в конечную поисковую строку" Condition="[in_Config(&quot;RemoveCompany&quot;).ToString=&quot;&quot;]" DisplayName="If in_Config(&quot;RemoveCompany&quot;).ToString=&quot;&quot;" sap:VirtualizedContainerService.HintSize="1131.2,112.8" sap2010:WorkflowViewState.IdRef="If_31">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Assign DisplayName="Assign url Vacancy" sap:VirtualizedContainerService.HintSize="262.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_26">
+                        <Assign DisplayName="Assign url Vacancy" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_26">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[urlVac]</OutArgument>
                           </Assign.To>
@@ -224,24 +224,24 @@
                         </Assign>
                       </If.Then>
                       <If.Else>
-                        <Assign DisplayName="Assign url Vacancy with Exceptions" sap:VirtualizedContainerService.HintSize="262.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                        <Assign DisplayName="Assign url Vacancy with Exceptions" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_33">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[urlVac]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config(item.Split(CChar(","))(2)).ToString+"  AND COMPANY_NAME:(not " + in_Config("RemoveCompany").ToString.Replace(";"," NOT ") + ")"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config(item.Split(CChar(","))(2)).ToString+"  AND COMPANY_NAME:(NOT " + in_Config("RemoveCompany").ToString.Trim.Replace(" ","_").Replace("_;_"," NOT ").Replace("_;"," NOT ").Replace(";_"," NOT ").Replace("_"," NOT ").Replace(";"," NOT ") + ")"]</InArgument>
                           </Assign.Value>
                         </Assign>
                       </If.Else>
                     </If>
-                    <Sequence DisplayName="Type URL &amp; extract into DT" sap:VirtualizedContainerService.HintSize="1131.2,948.8" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                    <Sequence DisplayName="Type URL &amp; extract into DT" sap:VirtualizedContainerService.HintSize="1131.2,945.6" sap2010:WorkflowViewState.IdRef="Sequence_75">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <TryCatch DisplayName="Try Type URL" sap:VirtualizedContainerService.HintSize="436.8,564" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                      <TryCatch DisplayName="Try Type URL" sap:VirtualizedContainerService.HintSize="436.8,562.4" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,7 +249,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <Sequence sap:VirtualizedContainerService.HintSize="266.4,332.8" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                          <Sequence sap:VirtualizedContainerService.HintSize="266.4,331.2" sap2010:WorkflowViewState.IdRef="Sequence_74">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -395,7 +395,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Flowchart.StartNode>
-                        <x:Reference>__ReferenceID15</x:Reference>
+                        <x:Reference>__ReferenceID17</x:Reference>
                       </Flowchart.StartNode>
                       <FlowStep x:Name="__ReferenceID0">
                         <sap:WorkflowViewStateService.ViewState>
@@ -950,7 +950,7 @@
                                                             <av:Size x:Key="ShapeSize">224.8,68.8</av:Size>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Sequence DisplayName="Добавляем записи, если их менее 60 и есть в dt_IpUp" sap:VirtualizedContainerService.HintSize="567.2,2162.4" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                                        <Sequence DisplayName="Добавляем записи, если их менее 60 и есть в dt_IpUp" sap:VirtualizedContainerService.HintSize="224.8,68.8" sap2010:WorkflowViewState.IdRef="Sequence_84">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1265,14 +1265,14 @@
                           </FlowStep>
                         </FlowStep.Next>
                       </FlowStep>
-                      <FlowDecision x:Name="__ReferenceID15" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0" sap:VirtualizedContainerService.HintSize="104.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                      <FlowDecision x:Name="__ReferenceID17" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;Company&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;Salary&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0" sap:VirtualizedContainerService.HintSize="104.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <av:Point x:Key="ShapeLocation">217.5,26.5</av:Point>
                             <av:Size x:Key="ShapeSize">104.8,87.2</av:Size>
                             <av:PointCollection x:Key="TrueConnector">217.5,70 140,70 140,131.5</av:PointCollection>
-                            <av:PointCollection x:Key="FalseConnector">322.5,70 486,70</av:PointCollection>
+                            <av:PointCollection x:Key="FalseConnector">322.3,70.1 352.3,70.1 352.3,70 407.6,70</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <FlowDecision.True>
@@ -1313,27 +1313,29 @@
                           </FlowStep>
                         </FlowDecision.True>
                         <FlowDecision.False>
-                          <FlowStep x:Name="__ReferenceID10">
+                          <FlowStep x:Name="__ReferenceID16">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">486,44.5</av:Point>
+                                <av:Point x:Key="ShapeLocation">407.6,43.6</av:Point>
                                 <av:Size x:Key="ShapeSize">224.8,52.8</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">598.4,97.3 598.4,127.3 617.5,127.3 617.5,176.5</av:PointCollection>
+                                <av:PointCollection x:Key="ConnectorLocation">632.4,70 647.5,70 647.5,146.5 617.5,146.5 617.5,176.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[adDT]" DisplayName="Extract Table Data Поломалось 16-02-2022" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Company'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Prof'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='UrlVac'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Salary'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Offer'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="224.8,52.8" sap2010:WorkflowViewState.IdRef="NExtractData_14" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5597cd4a-e78b-465a-ac68-19d493e4523c" Version="V1">
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[adDT]" DisplayName="Extract Table Data 21-04-22" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Company'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Prof'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='UrlVac'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Salary'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Offer'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="224.8,52.8" sap2010:WorkflowViewState.IdRef="NExtractData_16" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5597cd4a-e78b-465a-ac68-19d493e4523c" Version="V1">
+                              <uix:NExtractData.NextLink>
+                                <uix:TargetAnchorable BrowserURL="https://rabota.by/search/vacancy?clusters=true&amp;area=1002&amp;items_on_page=50&amp;industry=41.517&amp;specialization=17.256&amp;specialization=17.231&amp;ored_clusters=true&amp;enable_snippets=true&amp;only_with_salary=true&amp;st=searchVacancy&amp;search_field=name&amp;text=%D0%9F%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B5%D1%86%20%20AND%20COMPANY_NAME:(not%20%D0%BF%D0%BE%D0%BB%D0%B8%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B0%20NOT%20%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0%20NOT%20%D1%81%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%20NOT%20%D1%80%D0%B0%D0%BF%D0%B0)" DesignTimeRectangle="675, 982, 50, 16" ElementType="Text" FriendlyName="'дальше'" FullSelectorArgument="&lt;webctrl aaname='дальше' parentid='HH-React-Root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='дальше' parentid='HH-React-Root' tag='SPAN' type='' class='' check:text='дальше' /&gt;" Guid="d53bdd34-9efa-468a-8ea2-d998ebf7166b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAUCAYAAADGIc7gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAErSURBVFhH7ZVBDoIwEEU9ktFjEU9C4CToRYwsPQEJd2Az2paZ/nYoSUOMKWHxF3U6f/6jBU/TNNEedYCVpgOsNB1gpSkC66m+XOmMqu40Sn2krgrr1WOU/vFxC2pON+oGV3+133Xby36U7cVZz0avLw29eB1njXwXwHxzOGyGAgMH4oOrcNbvF2AOqn7OtTkbPuQMsAUNd6r+AGb3xj42i88egpkimKXAbEC5Bplg0me08hBXwLQPKwVmmuOrBuZiyL9tPDHcnw2WOHlWAGbM1cdAzMOQVluvIlyfHDA9RwvAdHANhi+sW2/5eOD+HDCenT4EAeOQCXGDNeffTWAe8Ja/ARy2CCb97OFqNlhQW5J/h9xpQw0fwlcA5oeg9CmUob2D7U8HWFma6AOQqTGOzDFSuQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Минске, свежие вакансии - rabota.by' /&gt;" SearchSteps="FuzzySelector" />
+                              </uix:NExtractData.NextLink>
                               <uix:NExtractData.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="575, 504, 1010, 8252" ElementType="InputBox" FriendlyName="'Отклик без'" FullSelectorArgument="&lt;webctrl id='a11y-main-content' tag='DIV' /&gt;" Guid="5d5eed47-77de-4c77-ae21-9b8f53034c98" InformativeScreenshot="3a2957faeb59b2df298dcd820197ed98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Минске, свежие вакансии - rabota.by' /&gt;" SearchSteps="Selector" />
+                                <uix:TargetAnchorable BrowserURL="https://rabota.by/search/vacancy?clusters=true&amp;area=1002&amp;items_on_page=50&amp;industry=41.517&amp;specialization=17.256&amp;specialization=17.231&amp;ored_clusters=true&amp;enable_snippets=true&amp;only_with_salary=true&amp;st=searchVacancy&amp;search_field=name&amp;text=%D0%9F%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B5%D1%86%20%20AND%20COMPANY_NAME:(not%20%D0%BF%D0%BE%D0%BB%D0%B8%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B0%20NOT%20%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0%20NOT%20%D1%81%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%20NOT%20%D1%80%D0%B0%D0%BF%D0%B0)" DesignTimeRectangle="575, 586, 1010, 21419" ElementType="InputBox" FriendlyName="'Продавец-консультантот …'" FullSelectorArgument="&lt;webctrl id='a11y-main-content' tag='DIV' /&gt;" Guid="e0d4111c-4a99-4cbc-9d95-0e203cb306b7" InformativeScreenshot="4fcf2dc306b2569c232e1ca054830212.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Минске, свежие вакансии - rabota.by' /&gt;" SearchSteps="Selector" />
                               </uix:NExtractData.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NExtractData>
                             <FlowStep.Next>
-                              <FlowDecision x:Name="__ReferenceID11" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2" True="{x:Reference __ReferenceID2}">
+                              <FlowDecision x:Name="__ReferenceID11" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;Company&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;Salary&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2" True="{x:Reference __ReferenceID2}">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1364,16 +1366,51 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NExtractData>
                                     <FlowStep.Next>
-                                      <FlowDecision x:Name="__ReferenceID12" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3" True="{x:Reference __ReferenceID2}" False="{x:Reference __ReferenceID3}">
+                                      <FlowDecision x:Name="__ReferenceID12" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;Company&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;Salary&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3" True="{x:Reference __ReferenceID2}">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <av:Point x:Key="ShapeLocation">680,346.5</av:Point>
                                             <av:Size x:Key="ShapeSize">160,87.2</av:Size>
                                             <av:PointCollection x:Key="TrueConnector">680,390.1 484,390.1 484,192.3 271.4,192.3</av:PointCollection>
-                                            <av:PointCollection x:Key="FalseConnector">840,390.1 878.4,390.1 878.4,883.6</av:PointCollection>
+                                            <av:PointCollection x:Key="FalseConnector">840,390.1 970,390.1 970,463.6</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
+                                        <FlowDecision.False>
+                                          <FlowStep x:Name="__ReferenceID10">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">857.6,463.6</av:Point>
+                                                <av:Size x:Key="ShapeSize">224.8,52.8</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">857.6,490 730,490 730,506.4</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[adDT]" DisplayName="Extract Table Data Поломалось 16-02-2022" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Company'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Prof'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='UrlVac'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Salary'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Offer'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="224.8,52.8" sap2010:WorkflowViewState.IdRef="NExtractData_14" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5597cd4a-e78b-465a-ac68-19d493e4523c" Version="V1">
+                                              <uix:NExtractData.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="575, 504, 1010, 8252" ElementType="InputBox" FriendlyName="'Отклик без'" FullSelectorArgument="&lt;webctrl id='a11y-main-content' tag='DIV' /&gt;" Guid="5d5eed47-77de-4c77-ae21-9b8f53034c98" InformativeScreenshot="3a2957faeb59b2df298dcd820197ed98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Минске, свежие вакансии - rabota.by' /&gt;" SearchSteps="Selector" />
+                                              </uix:NExtractData.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NExtractData>
+                                            <FlowStep.Next>
+                                              <FlowDecision x:Name="__ReferenceID15" Condition="[adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;Company&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot; AndAlso adDT.Rows(0)(&quot;Salary&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="adDT.RowCount&gt;0 AndAlso adDT.Rows(0)(&quot;UrlVac&quot;).ToString&lt;&gt;&quot;&quot;" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_5" True="{x:Reference __ReferenceID2}" False="{x:Reference __ReferenceID3}">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <av:Point x:Key="ShapeLocation">650,506.4</av:Point>
+                                                    <av:Size x:Key="ShapeSize">160,87.2</av:Size>
+                                                    <av:PointCollection x:Key="TrueConnector">650,550 484,550 484,192.3 271.4,192.3</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">810,550 878.4,550 878.4,883.6</av:PointCollection>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </FlowDecision>
+                                            </FlowStep.Next>
+                                          </FlowStep>
+                                        </FlowDecision.False>
                                       </FlowDecision>
                                     </FlowStep.Next>
                                   </FlowStep>
@@ -1432,6 +1469,8 @@
                       <x:Reference>__ReferenceID12</x:Reference>
                       <x:Reference>__ReferenceID13</x:Reference>
                       <x:Reference>__ReferenceID14</x:Reference>
+                      <x:Reference>__ReferenceID15</x:Reference>
+                      <x:Reference>__ReferenceID16</x:Reference>
                     </Flowchart>
                     <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Записываем результат в файл экселя 18.xlsx&#xA;" DisplayName="Write down to Excel" sap:VirtualizedContainerService.HintSize="1131.2,112.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" Visible="False" WorkbookPath="Data\Output\18.xlsx">
                       <ui:ExcelApplicationScope.Body>
